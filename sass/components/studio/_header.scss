@@ -1,0 +1,11 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  background-color: $primary-background-color;
+  border-bottom: 1px solid #ececec;
+
+  z-index: 1;
+}

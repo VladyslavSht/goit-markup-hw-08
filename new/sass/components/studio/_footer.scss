@@ -1,0 +1,155 @@
+.bottom {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-background-color;
+}
+
+.bottom-link {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.container-bottom {
+  display: flex;
+  align-items: baseline;
+}
+
+.bottom-left {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.bottom-left-title {
+  margin-bottom: 9px;
+
+  color: $second-primary-text-color;
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.bottom-left-contacts {
+  margin-bottom: 9px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.bottom-left-contacts .link {
+  color: rgba(255, 255, 255, 60%);
+
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color 250ms $time-function;
+}
+
+.social-net {
+  margin-right: 93px;
+}
+
+.social-net-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $primary-background-color;
+}
+
+.social-net-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 0;
+}
+
+.social-net-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 102px) / 4);
+  width: 44px;
+  height: 44px;
+
+  color: $second-primary-text-color;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  fill: currentColor;
+  transition: background-color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+  }
+}
+
+.social-net-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.bottom-form {
+  position: relative;
+  display: flex;
+}
+
+.bottom-form-label {
+  position: absolute;
+  left: 16px;
+  top: 15px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: transform 250ms $time-function;
+}
+
+.bottom-form-input {
+  height: 50px;
+  width: 358px;
+  padding-left: 16px;
+  color: $second-primary-text-color;
+  background-color: $footer-background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  &:focus + .bottom-form-label,
+  &:not(:placeholder-shown) + .bottom-form-label {
+    transform: translateX(-75px);
+  }
+}
+
+.bottom-form-btn {
+  margin-left: 12px;
+  padding: 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  color: $second-primary-text-color;
+  background: $accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+}
+
+.bottom-form-btn-icon {
+  margin-left: 10px;
+}

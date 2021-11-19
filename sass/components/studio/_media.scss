@@ -1,0 +1,30 @@
+.header-media {
+  display: flex;
+  margin-bottom: 48px;
+
+  & .link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: $accent;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.header-media-item {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  &:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+}

@@ -1,0 +1,42 @@
+.header-contacts,
+.header-contacts .header-contacts-item {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  color: $secondary-text-color;
+  vertical-align: middle;
+}
+
+.header-contacts .header-contacts-item + .header-contacts-item {
+  margin-left: 30px;
+}
+
+.icon.link {
+  display: flex;
+  fill: currentColor;
+  align-items: center;
+  transition: color 250ms $time-function;
+}
+
+.header-contacts-item {
+  & .link:hover,
+  & .link:focus {
+    color: $accent;
+  }
+}
+
+.icon-picture {
+  margin-right: 10px;
+}
+
+.header-contacts .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $secondary-text-color;
+
+  font-family: $text-font-main;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
