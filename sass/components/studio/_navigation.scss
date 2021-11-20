@@ -26,21 +26,25 @@
   min-width: 480px;
   padding-left: 40px;
   background-color: $primary-background-color;
+  flex-direction: column;
+  flex-grow: 1;
+  align-content: space-between;
 
   &.is-open {
-    display: block;
+    display: flex;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     position: inherit;
+    flex-direction: row;
     padding-left: 0px;
+    justify-content: space-between;
   }
 }
 
 .main-nav-list {
   padding-top: 48px;
-  margin-bottom: 302px;
 
   & .link:hover,
   & .link:focus {
