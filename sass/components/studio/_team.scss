@@ -1,0 +1,122 @@
+.team {
+  background-color: $secondary-background-color;
+}
+
+.team-title {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.clients-list,
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team-list-item {
+  margin-bottom: 30px;
+  width: 100vw;
+
+  text-align: center;
+
+  background-color: $primary-background-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:last-child() {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+
+    margin-right: 30px;
+    margin-bottom: 0;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.team-list-item-bottom {
+  padding: 30px 122px 24px 122px;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px 74px 24px 74px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px 32px 30px 32px;
+  }
+}
+
+.team-title-name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-title-profession {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  color: $secondary-text-color;
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.list-of-icons {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+}
+
+.list-of-icons-item .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc((100% - 102px) / 4);
+
+  width: 44px;
+  height: 44px;
+  color: $icons-color;
+
+  fill: currentColor;
+  border-radius: 50%;
+  transition: color 250ms $time-function, background-color 250ms $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    color: $primary-background-color;
+  }
+}
+
+.list-of-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-list-item-bottom.icon {
+  padding: 0;
+}
