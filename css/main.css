@@ -982,7 +982,12 @@ main {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .bottom {
+    text-align: center;
+  }
 }
 
 .bottom-link {
@@ -995,16 +1000,35 @@ main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .bottom-left {
     width: 231px;
+    margin-left: 61px;
+    margin-bottom: -20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bottom-left {
     margin-right: 70px;
-    margin-left: 100px;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
@@ -1034,6 +1058,12 @@ main {
 
 @media screen and (min-width: 768px) {
   .social-net {
+    margin-right: 74px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-net {
     margin-right: 93px;
   }
 }
@@ -1058,9 +1088,14 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*margin: 0;*/
   margin-bottom: 60px;
   padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .social-net-list {
+    margin: 0;
+  }
 }
 
 .social-net-link {
@@ -1093,6 +1128,14 @@ main {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .bottom-form-box {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .bottom-form {
   position: relative;
   width: 100%;
@@ -1103,6 +1146,15 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .bottom-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .bottom-form-label {
@@ -1144,8 +1196,15 @@ main {
           transform: translateX(-75px);
 }
 
+@media screen and (min-width: 1200px) {
+  .bottom-form-input {
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 358px;
+  }
+}
+
 .bottom-form-btn {
-  /*margin-left: 12px;*/
   margin-right: 125px;
   margin-left: 125px;
   margin-bottom: 60px;
@@ -1168,6 +1227,14 @@ main {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-style: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .bottom-form-btn {
+    margin-right: 0;
+    margin-left: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .bottom-form-btn-icon {
