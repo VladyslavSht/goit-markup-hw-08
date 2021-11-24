@@ -150,19 +150,31 @@
           <li class="work-list-item">
             <div class="thumb">
             <h3 class="work-list-text">Десктопные приложения</h3>
-            <img src="./images/imga.jpg" alt="Структура сайта" width="370" />
-            </div>
+            <picture>
+              <source srcset="./images/imga.webp 1x, ./images/imga@2x.webp 2x" type="image/webp" />
+              <source srcset="./images/imga.jpg 1x, ./images/imga@2x.jpg 2x" type="image/jpeg" />
+              <img src="./images/imga.jpg" alt="Структура сайта" width="370" />
+            </picture>
+          </div>
           </li>
           <li class="work-list-item">
             <div class="thumb">
             <h3 class="work-list-text">Мобильные приложения</h3>
+            <picture>
+              <source srcset="./images/imgb.webp 1x, ./images/imgb@2x.webp 2x" type="image/webp" />
+              <source srcset="./images/imgb.jpg 1x, ./images/imgb@2x.jpg 2x" type="image/jpeg" />
             <img src="./images/imgb.jpg" alt="Мобильные приложения" width="370"/>
+            </picture>
             </div>
           </li>
           <li class="work-list-item">
             <div class="thumb">
             <h3 class="work-list-text">Дизанерские решения</h3>
+            <picture>
+              <source srcset="./images/imgc.webp 1x, ./images/imgc@2x.webp 2x" type="image/webp" />
+              <source srcset="./images/imgc.jpg 1x, ./images/imgc@2x.jpg 2x" type="image/jpeg" />
             <img src="./images/imgc.jpg" alt="Оформление" width="370" />
+            </picture>
             </div>
           </li>
         </ul>
@@ -175,7 +187,16 @@
         <h2 class="team-title">Наша команда</h2>
         <ul class="team-list list">
           <li class="team-list-item">
-            <img src="images/photoa.jpg" alt="Photo 1" width="270" />
+            <picture>
+              <source srcset="./images/photoa-pc.webp 1x, ./images/photoa-pc@2x.webp 2x" type="image/webp" media="min-width: 769px" />
+              <source srcset="./images/photoa-pc.jpg 1x, ./images/photoa-pc@2x.jpg 2x" type="image/jpeg" media="min-width: 769px" />
+              <source srcset="./images/photoa.webp 1x, ./images/photoa@2x.webp 2x" type="image/webp" media="max-width: 576px" />
+              <source srcset="./images/photoa.jpg 1x, ./images/photoa@2x.jpg 2x" type="image/jpeg" media="max-width: 576px"/>
+              <source srcset="./images/photoa-tb.webp 1x, ./images/photoa-tb@2x.webp 2x" type="image/webp" media="max-width: 768px" />
+              <source srcset="./images/photoa-tb.jpg 1x, ./images/photoa-tb@2x.jpg 2x" type="image/jpeg" media="max-width: 768px" />
+              
+            <img src="images/photoa.jpg" alt="Photo 1" width="100%" />
+            </picture>
             <div class="team-list-item-bottom">
             <h3 class="team-title-name">Игорь Демьяненко</h3>
             <p lang="en" class="team-title-profession">Product Designer</p>
@@ -212,7 +233,7 @@
           </div>
           </li>
           <li class="team-list-item">
-            <img src="images/photob.jpg" alt="Photo 2" width="270" />
+            <img src="images/photob.jpg" alt="Photo 2" width="100%" />
             <div class="team-list-item-bottom">
             <h3 class="team-title-name">Ольга Репина</h3>
             <p  lang="en" class="team-title-profession">Frontend Developer</p>
@@ -249,7 +270,7 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="images/photoc.jpg" alt="Photo 3" width="270" />
+            <img src="images/photoc.jpg" alt="Photo 3" width="100%" />
             <div class="team-list-item-bottom">
             <h3 class="team-title-name">Николай Тарасов</h3>
             <p lang="en" class="team-title-profession">Marketing</p>
@@ -286,7 +307,7 @@
             </div>
           </li>
           <li class="team-list-item">
-            <img src="images/photod.jpg" alt="Photo 4" width="270" />
+            <img src="images/photod.jpg" alt="Photo 4" width="100%" />
             <div class="team-list-item-bottom">
             <h3 class="team-title-name">Михаил Ермаков</h3>
             <p lang="en" class="team-title-profession">UI Designer</p>

@@ -7,8 +7,8 @@ main {
 }
 
 .head {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -18,22 +18,65 @@ main {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/background.jpg);
+    url(../images/background-mb.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 600px;
-  max-width: 1600px;
 
-  @media screen and (max-width: 1200px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    min-height: 400px;
-    max-width: 768px;
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-mb2x.jpg);
   }
 
-  @media screen and (max-width: 480px) {
-    max-width: 480px;
+  @media screen and (min-width: 576px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-tb.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-tb2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/background-pc.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-pc2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
