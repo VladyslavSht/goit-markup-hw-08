@@ -20,6 +20,15 @@
   }
 }
 
+@media screen and (max-width: 389px) {
+  .filter-item:nth-child(n + 4) {
+    margin-top: 0;
+  }
+  .filter-item:nth-child(n + 3) {
+    margin-top: 15px;
+  }
+}
+
 .filter-btn {
   padding: 6px 22px 6px 22px;
 
