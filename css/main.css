@@ -174,7 +174,7 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .main-nav-box {
     height: 100vh;
   }
@@ -497,7 +497,7 @@ main {
   margin-top: 80px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   main {
     margin-top: 60px;
   }
@@ -559,24 +559,30 @@ main {
 }
 
 .head-title {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .head-title {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.62;
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .head-title {
+    width: 100%;
   }
 }
 

@@ -1,7 +1,7 @@
 main {
   margin-top: 80px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-top: 60px;
   }
 }
@@ -81,7 +81,7 @@ main {
 }
 
 .head-title {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -90,15 +90,20 @@ main {
   color: $second-primary-text-color;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and (max-width: 1200px) {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.62;
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
   }
 }
 
