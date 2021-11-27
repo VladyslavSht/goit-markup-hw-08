@@ -10,6 +10,11 @@
     color: $accent;
   }
 
+  @media screen and (min-width: 320px) and (max-width: 420px) {
+    flex-wrap: wrap;
+    width: 340px;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -26,5 +31,11 @@
   &:last-child {
     padding-right: 0;
     border-right: none;
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 420px) {
+    &:last-child {
+      padding-left: 0;
+    }
   }
 }

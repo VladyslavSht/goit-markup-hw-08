@@ -24,11 +24,40 @@
   align-items: center;
   transition: color 250ms $time-function, font-size 250ms $time-function,
     line-height 250ms $time-function;
+
+  &.tel {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+  &.mail {
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &.tel {
+      padding-bottom: 18px;
+      padding-top: 0;
+    }
+    &.mail {
+      padding-top: 18px;
+      padding-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &.tel {
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
+    &.mail {
+      padding-bottom: 32px;
+      padding-top: 32px;
+    }
+  }
 }
 
 .header-contacts-item {
-  padding-bottom: 32px;
-
   &:last-child {
     padding-bottom: 0;
   }

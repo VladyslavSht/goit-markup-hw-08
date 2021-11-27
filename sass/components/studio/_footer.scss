@@ -27,6 +27,7 @@
 }
 
 .bottom-left {
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     width: 231px;
 
@@ -55,7 +56,7 @@
   margin-bottom: 9px;
 
   &:last-child {
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 768px) {
@@ -75,8 +76,10 @@
 }
 
 .social-net {
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin-right: 74px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -100,7 +103,7 @@
   align-items: center;
   justify-content: center;
 
-  margin-bottom: 60px;
+  margin-top: 0;
   padding-left: 0;
 
   @media screen and (min-width: 768px) {

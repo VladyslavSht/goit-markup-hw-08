@@ -4,7 +4,7 @@
 }
 
 .clients-list-item {
-  width: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 30px) / 2);
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -17,7 +17,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 
     &:nth-child(2n) {
       margin-right: 30px;
@@ -33,7 +33,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 150px) / 6);
+    flex-basis: calc((100% - 150px) / 6);
 
     &:nth-child(3n) {
       margin-right: 30px;
@@ -53,7 +53,7 @@
   justify-content: center;
   align-items: center;
   height: 92px;
-  width: 210px;
+  flex-basis: calc((100% - 30px) / 2);
   border: 1px solid $icons-color;
   border-radius: 4px;
 
@@ -68,11 +68,11 @@
   }
 
   @media screen and (min-width: 768px) {
-    width: 226px;
+    flex-basis: calc((100% - 60px) / 3);
   }
 
   @media screen and (min-width: 1200px) {
-    width: 170px;
+    flex-basis: calc((100% - 150px) / 6);
   }
 }
 

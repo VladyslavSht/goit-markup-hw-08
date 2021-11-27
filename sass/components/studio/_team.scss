@@ -1,5 +1,8 @@
 .team {
   background-color: $secondary-background-color;
+  @media screen and (max-width: 320px) {
+    width: 320px;
+  }
 }
 
 .team-title {
@@ -54,7 +57,7 @@
 }
 
 .team-list-item-bottom {
-  padding: 30px 122px 24px 122px;
+  padding: 30px 32px;
 
   @media screen and (min-width: 768px) {
     padding: 30px 74px 24px 74px;
@@ -87,6 +90,7 @@
 .list-of-icons {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0;

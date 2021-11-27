@@ -10,7 +10,7 @@
 
   transition: opacity 250ms $time-function;
 
-  z-index: 2;
+  z-index: 5;
 
   padding: 94px 15px 94px 15px;
 
@@ -45,6 +45,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  @media screen and (min-width: 320px) {
+    min-width: 290px;
+  }
+
   @media screen and (min-width: 480px) {
     width: 450px;
   }
@@ -66,7 +70,7 @@
 .modal-title {
   margin-top: 0px;
   margin-bottom: 30px;
-  width: 370px;
+  width: calc(100% - 80px);
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
